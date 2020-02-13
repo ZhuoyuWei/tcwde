@@ -20,7 +20,7 @@ def read_one(filename):
 def read_all(input_dir):
     files=os.listdir(input_dir)
     for file in files:
-        file=os.listdir(os.path.join(file,'AggregatedBlobofText'))[0]
+        file=os.listdir(os.path.join(input_dir,file,'AggregatedBlobofText'))[0]
         read_one(file)
 
 
